@@ -1,1 +1,342 @@
-Welcome to AJM-1 github.io page!
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheets" href="css/knobs.css">
+  <link rel="stylesheets" href="css/select.css">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Burger Beats</title>
+</head>
+
+<body>
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@magenta/music@1.4.2/dist/magentamusic.min.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <div class="burger-container">
+    <div class="drum-container">
+      <div class="slider-container">
+        <div class="temperature-title">
+          Temperature
+        </div>
+        <input type="range" min="1" max="20" value="10" class="slider" id="temperature">
+        <div class="tempo-title">
+          Tempo
+        </div>
+        <input type="range" min="1" max="16" value="8" class="slider" id="tempo">
+      </div>
+
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_0">
+          Kick
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_0_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_0_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_1">
+          Snare
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_1_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_1_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_2">
+          Hi-Hat Closed
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_2_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_2_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_3">
+          Hi-Hat Open
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_3_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_3_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_4">
+          Tom Low
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_4_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_4_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_5">
+          Tom Mid
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_5_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_5_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_6">
+          Tom High
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_6_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_6_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_7">
+          Clap
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_7_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_7_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+      <div class="drum-row">
+        <div class="drum-row-title" id="label_8">
+          Ride
+        </div>
+        <div class="drum-inputs">
+          <input type="button" id="drum_8_0" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_1" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_2" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_3" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_4" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_5" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_6" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+          <input type="button" id="drum_8_7" class="deepdrum-kick deepdrum-step-buttons" style="margin-right: 1px;">
+        </div>
+      </div>
+
+    </div>
+    <div class="pickle-container">
+      <div class="pickle-left">
+        <div id="drum-title">
+          Drum Type
+        </div>
+        <select id="drumType" class="custom-select">
+          <option value="hiphop">hiphop</option>
+          <option value="analog">analog</option>
+          <option value="electronic">electronic</option>
+          <option value="percussion">percussion</option>
+        </select>
+      </div>
+      <div class="tomato">
+        <div class="pickle-middle"></div>
+      </div>
+      <div class="pickle-right">
+        <div id="synth-title">
+          Synth Type
+        </div>
+        <select id="synthType" class="custom-select">
+          <option value="synth">Synth</option>
+          <option value="FMSynth">FMSynth</option>
+          <option value="AMSynth">AMSynth</option>
+          <option value="Piano">Piano</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="cheese">
+      <span class="cheese-corner-right">▾</span>
+    </div>
+
+    <div class="patty"></div>
+
+    <div class="lettuce"></div>
+
+    <div class="bottom-bun">
+
+      <div id="drum-effect">
+        Drum Effects
+      </div>
+      <div id="lead-effect">
+        Lead Effects
+      </div>
+
+      <div class="drumEffects">
+
+        <div class="drumCompKnobs">
+
+          <div class="input-dv">
+            <label class="input-label" for="compThreshKnob">
+              <input type="text" value="0" class="knob basic-dial" id="compThreshKnob">
+              Threshold 
+            </label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="compRatioKnob">
+              <input type="text" value="0" class="knob basic-dial" id="compRatioKnob">
+              Ratio</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="drumDistortionKnob">
+              <input  type="text" value="0" class="knob basic-dial" id="drumDistortionKnob">
+              Distortion</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="drumreverbAmount">
+              <input  type="text" value="0" class="knob basic-dial" id="drumreverbAmount">
+              Reverb</label>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="synthEffects">
+        <div class="synthChorusKnobs">
+
+          <div class="input-dv">
+            <label class="input-label" for="synthChorusFreqKnob">
+              <input type="text" value="0" class="knob basic-dial" id="synthChorusFreqKnob">
+              Chorus Freq.</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="synthChorusDelayKnob">
+              <input type="text" value="0" class="knob basic-dial" id="synthChorusDelayKnob">
+              Chorus Delay</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="synthChorusDepthKnob">
+              <input type="text" value="0" class="knob basic-dial" id="synthChorusDepthKnob">
+              Chorus Depth</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="synthReverbKnob">
+              <input type="text" value="0" class="knob basic-dial" id="synthReverbKnob">
+              Reverb</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="synthPitchKnob">
+              <input type="text" value="0" class="knob basic-dial" id="synthPitchKnob">
+              Pitch</label>
+          </div>
+
+          <div class="input-dv">
+            <label class="input-label" for="synthFilterFreqKnob">
+              <input type="text" value="0" class="knob basic-dial" id="synthFilterFreqKnob">
+              Filter Freq.</label>
+          </div>
+
+          <select id="filterType" class="custom-select">
+            <option value="lowpass">lowpass</option>
+            <option value="highpass">highpass</option>
+          </select>
+        </div>
+        
+      </div>
+        
+      </div>
+
+      <div class="buttons">
+      <!-- <button id="load"> Load </button> -->
+      <button id="play"> Play </button>
+      <button id="stop"> Stop </button>
+      <button id="generate"> Generate New Beat </button>
+      <button id="effects"> Turn Effects ON (Careful)</button>
+    </div>
+    </div>
+    
+  </div>
+  
+  <div class="instructions">
+    
+
+    <h3>Instructions:</h3>
+    <p id="desc">
+      Create a pattern with the sesame seed buttons, press play to listen to the pattern you have created.
+      Once you are satisifed, press generate beat to create a new ai beat. Beats will constantly create new beats
+      using machine learning to continually
+      create new beats. Bottom Bun is in Beta.
+    </p>
+  </div>
+  </div>
+
+  <iframe class="background" src="background.html"></iframe>
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@magenta/music@1.4.2/dist/magentamusic.min.js"></script>
+
+  <script type="text/javascript" src="js/reverse_midi_map.js"></script>
+  <script type="text/javascript" src="js/tone.js"></script>
+  <script type="text/javascript" src="js/tonal.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/effects.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/knob.js"></script>
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+</body>
+
+</html>
